@@ -1,0 +1,645 @@
+
+@font-face {
+    font-family: "Bentley";
+    font-weight: normal;
+    src: url("./fonts/bentley-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bentley";
+    font-weight: lighter;
+    src: url("./fonts/bentley-light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bentley";
+    font-weight: bold;
+    src: url("./fonts/bentley-semibold.woff") format("woff");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding:0;
+    margin: 0;
+    font-family: "Bentley";
+}
+
+h1{
+    font-size: 38px;;
+    text-transform: uppercase;
+    padding-top:10px;
+    margin-bottom:20px;
+}
+.car-list-infos-technique{
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #7f988f;
+    color:white;
+    text-transform: uppercase;
+    
+    font-family: "Bentley";
+    font-weight: bold;
+    text-align: center;
+}
+.car-list-infos-technique .active{
+    text-decoration: underline;
+}
+.car-list-infos-technique ul{
+    margin : 0;
+}
+.car-list-infos-technique ul li{
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.car-list-infos-technique ul li a{
+    color:white;
+}
+.car-list-infos-technique ul li a:hover{
+    color:white;
+}
+.headline{
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #7f988f;
+    color:white;
+    text-transform: uppercase;
+    
+    font-family: "Bentley";
+    font-weight: bold;
+    text-align: center;
+}
+
+.headline h2{
+    font-size:22px;
+    margin:0;
+    padding:0;
+}
+
+.landing-container{
+    display: flex;
+    width: 100%;
+    height: 710px;
+}
+
+footer ul {
+    width:100%;
+    max-width: 1224px;
+    margin:auto;
+    padding: 20px;;
+}
+footer ul li {
+    display: inline-block;
+    margin-right:20px;
+    color:white;
+    font-size: 20px;
+}
+footer ul li a{
+    color:white !important;
+    font-size: 20px;
+}
+.container-left{
+    background-color:#335b4c;
+    color:white;
+    width: 50%;
+    position: relative;
+}
+.container-right{
+    width:50%;
+}
+.swiper{
+    height:100%;
+    object-fit: cover;
+}
+.swiper2{
+    height:100%;
+    object-fit: cover;
+}
+.swiper img{
+    height:100%;
+    object-fit: cover;
+}
+.photo-description{
+    color: white;
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    z-index: 3;
+    padding:5px;
+    font-size: 14px;
+    width:100%;
+}
+.gallery-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.gallery-container a{
+    display: block;
+    margin-top:5px;
+}
+.gallery-container .middle
+{
+    margin-left:7px;
+    margin-right:7px;
+
+}
+
+.photo-description a{
+    color:white !important;
+}
+.logo{
+    max-height: 58px;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:25px;
+}
+header{
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    
+    border-bottom: solid 1px #94c11d;
+    text-transform: uppercase;
+}
+/* #335b4c; */
+.logo-container{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color:#335b4c !important;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.step-left-container p{
+    font-size:18px;
+    margin-bottom: 10px;;
+}
+.step-left-container{
+    padding:40px;
+    padding-left:110px;
+    padding-right:110px;
+    height: 100%;;
+}
+
+.step-2, .step-3{
+    display: none;
+}
+label{
+    display:inline-block;
+    margin-bottom:20px;
+    font-size:26px;
+    font-family:"Bentley";
+}
+select{
+    font-size:22px;
+    font-family:"Bentley";
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color:white;
+    cursor: pointer;
+    width: 100%;
+    max-width:260px;
+    margin-bottom: 20px;
+}
+#gender-label, #gender{
+    margin-bottom:0px;
+}
+.step-1 p{
+    margin-bottom:20px;
+}
+input[type="text"] {
+    font-size:28px;
+    font-family:"Bentley";
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color:white;
+    cursor: pointer;
+    width: 100%;
+    margin-top:4px;
+}
+input[type="text"]::placeholder{
+    color:#dedede;
+    font-size: 22px;
+}
+input[type="text"]::focus-visible{
+    border:none;
+}
+select option{
+    color:black;
+}
+.prev-next{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+}
+.prev-btn{
+    font-size:22px;
+    cursor: pointer;
+    padding-left:20px;
+    padding-right:20px;
+    display: none;;
+    margin-right: 30px;
+}
+.next-btn{
+    font-size:22px;
+    cursor: pointer;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left: 30px;
+}
+#send-form{
+    display: none;;
+    font-size:22px;
+    cursor: pointer;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left: 30px;
+}
+.H_icon{
+    display: none;
+}
+
+.H_overlay{
+    display: none;
+}
+
+
+.label-accept{
+    cursor: pointer;
+    margin-top: 40px;
+}
+.label-accept input{
+    width: 20px;
+    height: 20px;;
+}
+
+#mapContainer{
+    width: 100%;
+    height: 710px;
+    display: inline-block;
+    vertical-align: top;;
+}
+
+#calendarpicker{
+    color:black;
+    border: none;
+    font-size:22px;
+}
+
+h3{
+    font-family: "Bentley";
+    font-size: 22px;
+    font-weight: normal;
+}
+
+label{
+    font-family: "Bentley";
+    font-size: 20px;
+    font-weight: normal;
+}
+
+button{
+    font-family: "Bentley";
+    font-weight: normal;
+}
+
+.confirmation-container{
+    background-color: #335b4c;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding:20px;
+}
+
+iframe{
+    margin-top:80px;
+    margin-bottom:100px;
+}
+
+.confirmation-container p {
+    font-family: "Bentley";
+    font-size:22px;
+}
+
+.confirmation-container a{
+    color:white !important;
+    font-family: "Bentley";
+    font-size:22px;
+    text-decoration: underline;
+}
+
+.btn-infos-technique{
+    font-family: "Bentley";
+    font-size:18px;
+    color:white!important;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left:20px;
+}
+
+#infos-technique h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:30px;
+    margin-top:30px;
+}
+
+.down-arrow{
+    margin-top:30px!important;
+    display: block;
+    margin:auto;
+    width:40px;
+}
+#infos-technique{
+    width: 100%;
+    padding:20px;
+    max-width: 1224px;
+    margin: auto;
+}
+.flying-spurs_info-technique{
+    display:none;
+}
+.continental-gt-s_info-technique{
+    display:none;
+}
+.continental-gtc-s_info-technique{
+    display:none;
+}
+
+#when-buy{
+    max-width: 360px;;
+}
+.margin-t20{
+    margin-top:20px;
+}
+.summary h3{
+    font-weight: bold;;
+}
+
+.summary{
+    font-size:20px;
+}
+
+.car-sheet-container {
+    width:100%;
+    max-width: 1224px;
+    margin:auto;
+    padding: 20px;;
+}
+
+.car-sheet-container h2{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.car-sheet-container .summary{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;;
+}
+
+form{
+    position: static;
+}
+
+.car-sheet-nav{    
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #7f988f;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    
+    font-family: "Bentley";
+    font-weight: bold;
+    text-align: center;
+}
+
+.car-sheet-nav div {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width:1224px;
+    text-align: left;
+}
+
+.car-sheet-nav div a{
+    color:white !important;
+}
+footer{margin-top:30px;
+    background-color: #7f988f;
+}
+
+.photo-banner-info {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width:1224px;
+}
+
+#gender{
+    width:140px;
+}
+
+.current-car{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    padding: 20px;
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+}
+
+.title-type-1{
+
+    text-align: center;
+}
+
+.column3{
+    width: 31%;
+    margin-right:2%;
+    font-size: 20px;;
+    text-align: center;
+}
+
+.column2{
+    width: 48%;
+    margin-right:2%;
+    font-size:20px;
+}
+
+.size-20{
+    font-size:20px;
+}
+
+.car-sheet-title{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 30px;;
+}
+
+.title-type-2{
+    font-size:30px;
+    margin-top: 35px;
+}
+
+table{
+    width: 100%;
+    font-size:20px;
+}
+
+table tr{
+    border-bottom: 1px solid black;
+    height:30px;
+}
+
+table td{
+    line-height: 50px;
+}
+
+.error{
+    color:red;
+}
+
+table tr:last-child{
+    border: none;
+}
+
+.calendarpicker-container{
+    margin-top: 15px;
+}
+
+.calendarpicker-container label{
+    margin-bottom: 5px;
+}
+
+.timepicker-container label{
+    margin-bottom: 5px;
+}
+
+.timepicker-container{
+    margin-top: 15px;
+}
+
+
+.legal-notice-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.legal-notice-container h1{
+    margin-top:80px;
+}
+
+table td:first-child
+{
+    width: 40%;
+}
+
+.figure{
+    margin: auto;
+    margin-top:30px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.check{
+    vertical-align: middle;
+    font-size: 26px;
+    color: #335b4c;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+/*
+* Small Desktop Tablette
+*/
+
+@media screen and (max-width:1400px)
+{
+    .step-left-container{
+        padding: 25px 40px 10px 40px;
+    }
+    h1{
+        font-size:45px;
+        margin-bottom:20px;
+    }
+    select,input[type="text"]{
+        font-size:20px;
+    }
+    .landing-container{
+        height: 680px;
+    }
+
+}
+.mobile-select-car{
+    display: none;
+    margin-bottom: 30px;;
+}
+.car2,.car3,.car4{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    .container-right{
+        display: none;
+    }
+    .container-left{
+        width: 100%;
+        padding-bottom: 100px;
+        height: auto;
+    }
+    .step-left-container, .landing-container{
+        height: auto;
+    }
+    .column2, .column3{
+        display: block;
+        width: 100%;
+    }
+    .column3{
+        margin-bottom: 20px;
+    }
+    
+    .mobile-select-car{
+        display: block;
+    }
+    .car-list-infos-technique ul li{
+        display: block;
+        margin-bottom:15px;    
+    }
+    .next-btn{
+        margin-left: 0;
+    }
+    .photo-description{
+        font-size:12px;
+    }
+    header nav ul li{
+        display: block;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+}
